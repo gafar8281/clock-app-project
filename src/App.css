@@ -67,7 +67,7 @@ body {
   }
   .scroll-button{
     /* padding-bottom: 134px; */
-    bottom: 170px;
+    bottom: 153px;
     padding: 0;
     /* position: 0; */
     /* border: none; */
@@ -76,7 +76,7 @@ body {
   .main-image {
     /* width: 100%; Increase width for mobile screens */
     width: 100vw;
-    max-width: 109%; 
+    max-width: 104%; 
     max-height: none; 
     display: block;
     padding-bottom: 78px;
