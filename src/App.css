@@ -14,7 +14,7 @@ body {
 }
 
 .main-image {
-  width: 80%; 
+  width: 56%; 
   height: auto;
   max-height: 80vh; 
 }
@@ -62,26 +62,34 @@ body {
 /* Mobile screen */
 @media (max-width: 440px) {
   .clock-container {
-    padding-bottom: 130px; 
+    padding-bottom: 163px; 
   
   }
   .scroll-button{
-    padding-bottom: 60px;
-    bottom: 17px;
+    /* padding-bottom: 134px; */
+    bottom: 170px;
+    padding: 0;
+    /* position: 0; */
+    /* border: none; */
+    
   }
   .main-image {
     /* width: 100%; Increase width for mobile screens */
-     width: 100vw;
-     max-width: 150%; 
+    width: 100vw;
+    max-width: 109%; 
     max-height: none; 
     display: block;
+    padding-bottom: 78px;
   }
   body {
     overflow-x: hidden; 
   }
   .scroll-button:hover {
     color: rgb(89, 87, 87); 
+
+
   }
+
   .icon-container {
     padding-bottom: 22px; 
   }

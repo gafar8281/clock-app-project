@@ -22,7 +22,7 @@ function App() {
     <div>
      
       <div className="image-container">
-        <img className="main-image" src="/malay_typo.png" alt="Description of the image" />
+        <img className="main-image" src="/malay_clocknew.png" alt="Description of the image" />
         <button className="scroll-button" onClick={scrollToClock}>
           <FontAwesomeIcon icon={faChevronDown} size="lg" />
         </button>

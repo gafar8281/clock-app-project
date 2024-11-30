@@ -7,8 +7,8 @@ const PolarClock = () => {
   const isMobile = window.innerWidth <= 480; // Define mobile screen break point
   const width = 900;
   const height = width;
-  const radius = isMobile ? width / 2 : width / 2.5; 
-  const dotRadius = isMobile ? radius / 23.5 - 9 : radius / 22 - 9; 
+  const radius = isMobile ? width / 1.73 : width / 2.5; 
+  const dotRadius = isMobile ? radius / 24.6 - 9 : radius / 22 - 9; 
 
 
   const fields = [
@@ -29,7 +29,7 @@ const PolarClock = () => {
 
     const field = svg.append("g")
       // .attr("transform", `translate(${width / 2},${height / 2 - 85})`)   // height change
-      .attr("transform", `translate(${width / 2}, ${height / 2 - (isMobile ? 76 : 90)})`) 
+      .attr("transform", `translate(${width / 2}, ${height / 2 - (isMobile ? 18 : 90)})`) 
 
       .selectAll("g")
       .data(fields)
@@ -66,7 +66,8 @@ const PolarClock = () => {
       .attr("dy", "0.21em")
       .attr("text-anchor", "middle")
       .attr("fill", "white")
-      .style("font-size", "11px")
+      // .style("font-size", "11px")
+      .style("font-size", isMobile ? "14.5px" : "11px")
       .text(d => d.field.format(d.time).slice(0, 2));
 
     const fieldFocus = field.append("circle")
